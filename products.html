@@ -39,6 +39,9 @@
                     Fresh bread baked for our customers.
                 </figcaption>
             </figure>
+            <button type="button" onclick="toggleFavorite('bread')">
+    Add Artisan Bread to Favorites
+</button>
         </section>
 
         <section>
@@ -58,6 +61,9 @@
                     A selection of freshly prepared pastries.
                 </figcaption>
             </figure>
+            <button type="button" onclick="toggleFavorite('pastries')">
+    Add Fresh Pastries to Favorites
+</button>
         </section>
 
         <section>
@@ -75,13 +81,21 @@
                 <img src="cake-small.jpg"
                      alt="Decorated celebration cake from North Star Bakery">
             </picture>
+            <button type="button" onclick="toggleFavorite('cake')">
+    Add Custom Cakes to Favorites
+</button>
         </section>
+        <section>
+    <h2>Your Favorite Bakery Items</h2>
+    <p>Your selections are saved in this browser.</p>
+    <ul id="favorite-list"></ul>
+</section>
 
     </main>
 
     <footer>
         <p>&copy; 2026 North Star Bakery. All rights reserved.</p>
     </footer>
-
+<script src="script.js"></script>
 </body>
 </html>

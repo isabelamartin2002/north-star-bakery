@@ -30,7 +30,7 @@
                 Complete the form below and we will be happy to help.
             </p>
 
-            <form action="#" method="post">
+            <form id="contact-form" action="#" method="post" novalidate>
 
                 <fieldset>
                     <legend>Customer Information</legend>
@@ -40,13 +40,13 @@
                            id="name"
                            name="name"
                            required>
-
+<p id="name-error" class="error-message"></p>
                     <label for="email">Email Address:</label>
                     <input type="email"
                            id="email"
                            name="email"
                            required>
-
+<p id="email-error" class="error-message"></p>
                     <label for="phone">Phone Number:</label>
                     <input type="tel"
                            id="phone"
@@ -93,6 +93,6 @@
     <footer>
         <p>&copy; 2026 North Star Bakery. All rights reserved.</p>
     </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
